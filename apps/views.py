@@ -22,24 +22,20 @@ class ContactView(TemplateView):
     template_name = 'apps/contact.html'
 
 
-def elements(request):
-    return render(request, 'apps/elements.html')
+class ElementView(TemplateView):
+    template_name = 'apps/elements.html'
 
 
-def facilites(request):
-    return render(request, 'apps/facilites.html')
+class FacilityView(TemplateView):
+    template_name = 'apps/facilites.html'
 
 
-def main(request):
-    return render(request, 'apps/main.html')
+class MainView(TemplateView):
+    template_name = 'apps/main.html'
 
 
-def property(request):
-    return render(request, 'apps/property.html')
-
-
-def single_blog(request):
-    return render(request, 'apps/single-blog.html')
+class PropertyView(TemplateView):
+    template_name = 'apps/property.html'
 
 
 class RegisterView(CreateView):
