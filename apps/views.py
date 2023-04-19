@@ -51,6 +51,6 @@ class RegisterView(CreateView):
 
 class CustomLoginView(LoginView):
     next_page = 'index'
-    redirect_authenticated_user = True
+    redirect_authenticated_user = False
     template_name = 'apps/login.html'
     success_url = reverse_lazy('index')
