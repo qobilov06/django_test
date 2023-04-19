@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block url %}{% endblock %}</title>
+</head>
+{% block css %}{% endblock %}
+<body>
+<header>
+    <div class="header-area ">
+        <div id="sticky-header" class="main-header-area">
+            <div class="container-fluid p-0">
+                <div class="row align-items-center no-gutters">
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="logo">
+                            <a href="{% url 'index' %}">
+                                <img src="{% static 'apps/img/logo.png' %}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a class="active" href="{% url 'index' %}">home</a></li>
+                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li><a href="#">pages</a>
+                                        <ul class="submenu">
+                                            <li><a href="{% url 'facilites' %}">Facilities</a></li>
+                                            <li><a href="{% url 'property' %}">Properties</a></li>
+                                            <li><a href="{% url 'elements' %}">elements</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">blog</a>
+                                        <ul class="submenu">
+                                            <li><a href="{% url 'blog' %}">blog</a></li>
+                                            <li><a href="{% url 'single_blog' %}">single-blog</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                        <div class="social_wrap d-flex align-items-center justify-content-end">
+                            <div class="login_text">
+                                <a href="#">Login</a>
+                            </div>
+                            <div class="number">
+                                <p>Call us <a href="#">+001 325 589</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text">
+                    <h3>{% block title %}{% endblock %}</h3>
+                    <p><a href="{% url 'index' %}">Home</a> / About</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% block about_area %}{% endblock %}
+{% block appertment_area %}{% endblock %}
+{% block testimonial_area %}{% endblock %}
+{% block quotation_area %}{% endblock %}
+{% block sample_area %}{% endblock %}
+{% block button_area %}{% endblock %}
+{% block align_area %}{% endblock %}
+{% block modal %}{% endblock %}
+{% block facilitics_area %}{% endblock %}
+{% block appertment_area2 %}{% endblock %}
+{% block testimonial_area2 %}{% endblock %}
+{% block quotation_area2 %}{% endblock %}
+{% block blog %}{% endblock %}
+{% block modal_blog %}{% endblock %}
+{% block contact %}{% endblock %}
+{% block modal_contact %}{% endblock %}
+
+
+<footer class="footer footer_bg_1">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget ">
+                        <h3 class="footer_title">
+                            About Us
+                        </h3>
+                        <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days
+                            open</p>
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="{% static 'apps/img/footer_logo.png' %}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget ">
+                        <h3 class="footer_title">
+                            Contact Info
+                        </h3>
+                        <p>Address :Your address goes
+                            here, your demo address.</p>
+                        <ul>
+                            <li><a href="#">Phone : +8880 44338899</a></li>
+                            <li><a href="#">Email : info@colorlib.com</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget ">
+                        <h3 class="footer_title">
+                            Important Link
+                        </h3>
+                        <ul>
+                            <li><a href="#">View Project</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Testimonial</a></li>
+                            <li><a href="#">Proparties</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Newsletter
+                        </h3>
+                        <p class="newsletter_text">
+                            Heaven fruitful doesn't over lesser in days. Appear creeping seasons
+                        </p>
+                        <form action="#" class="newsletter_form">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="copy_right">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i>
+                        by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="socail_links">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-behance"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% block js %}{% endblock %}
+
+</body>
+</html>
