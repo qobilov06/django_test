@@ -38,6 +38,10 @@ class PropertyView(TemplateView):
     template_name = 'apps/property.html'
 
 
+class SingleBlogView(TemplateView):
+    template_name = 'apps/single-blog.html'
+
+
 class RegisterView(CreateView):
     model = Users
     form_class = UserForm
